@@ -26,7 +26,7 @@ export const links = {
 };
 
 export const firebaseConfig = {
-  apiKey: '',
+  apiKey: _env.VITE_FIREBASE_API_KEY || '',
   authDomain: '',
   projectId: '',
   storageBucket: '',

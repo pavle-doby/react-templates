@@ -1,0 +1,2 @@
+yarn lint-staged
+echo '\x1b[32m✔\x1b[0m Pre commit hook executed'
