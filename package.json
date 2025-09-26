@@ -1,0 +1,51 @@
+{
+  "name": "react-spa",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "local": "cross-env VITE_APPLIED_ENV=local vite",
+    "build:local": "tsc && cross-env VITE_APPLIED_ENV=local vite build",
+    "dev": "cross-env VITE_APPLIED_ENV=development vite",
+    "build:dev": "tsc && cross-env VITE_APPLIED_ENV=development vite build",
+    "prod": "cross-env VITE_APPLIED_ENV=production vite",
+    "build:prod": "tsc && cross-env VITE_APPLIED_ENV=production vite build",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@tanstack/react-query": "^5.83.0",
+    "axios": "^1.10.0",
+    "cross-env": "7.0.3",
+    "firebase": "^12.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.63.0",
+    "react-router-dom": "^7.7.0",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "^11.13.5",
+    "@eslint/js": "^9.31.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.7.0",
+    "eslint": "^9.31.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.1",
+    "prettier": "3.6.2",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.37.0",
+    "vite": "^7.1.7",
+    "vite-plugin-checker": "^0.10.3",
+    "vite-plugin-eslint": "^1.8.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{js,jsx,ts,tsx,json,css,md}": "prettier --write"
+  }
+}

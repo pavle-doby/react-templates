@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "{{PROJECT_ID}}"
+  },
+  "targets": {
+    "polgrid-18ed5": {
+      "hosting": {
+        "development": [
+          "{{DEVELOPMENT_SITE_ID}}"
+        ],
+        "production": [
+          "{{PRODUCTION_SITE_ID}}"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
